@@ -1,4 +1,6 @@
 # 4x4_Rover_ESP32
+
+-video coming eventually-
 Generic platform for 1:10 scale robot rover with ESP32 and PS4 controller. Skid Steer style with hardware [mostly] from scratch.
 ![4x4_skidsteer_rover_real](https://github.com/user-attachments/assets/ce0b91fb-4464-43e5-ac15-fb2367ae0194)
 
