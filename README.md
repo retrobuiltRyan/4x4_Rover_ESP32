@@ -12,7 +12,7 @@ Generic platform for 1:10 scale robot rover (skid steer style) with ESP32 and PS
 |------|--------------|--------------------------------------------|-----|--------|------------|--------------------------------------------------------------------------------------|
 | 1    | Wheel        | Lego "Compatible" Tire 94x38 (or similar)  | 1   | $17.65 | $17.65     | [Link](https://www.aliexpress.us/item/3256808684598937.html)                         |
 | 2    | Drive        | Shaft Coupler, 4mm dia                     | 4   | $1.65  | $6.60      | [Link](https://www.aliexpress.us/item/3256805863207590.html)                         |
-| 3    | Drive        | Motor 12V, 82 RPM                          | 4   | $5.74  | $22.96     | [Link](https://www.aliexpress.us/item/3256807500148966.html)                         |
+| 3    | Drive        | Motor 12V, 82 RPM                          | 4   | $5.74  | $22.96     | [Link](https://www.aliexpress.us/item/3256807500148966.html) or [Link](https://www.aliexpress.us/item/3256807350691232.html)                       |
 | alt3 | Drive        | Motor 12V, 82 RPM + RC Wheel               | 4   | $6.46  | $25.84     | [Link](https://www.aliexpress.us/item/3256806026937992.html)                         |
 | 5    | Chassis      | #6-32 x 0.5 in Round Head Screw            | 28  | $0.03  | $0.94      | 90279A148                                                                            |
 | 6    | Chassis      | #6-32 x 0.75 in Round Head Screw           | 20  | $0.04  | $0.83      | 90279A151                                                                            |
