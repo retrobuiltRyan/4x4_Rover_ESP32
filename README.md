@@ -23,7 +23,8 @@ Generic platform for 1:10 scale robot rover (skid steer style) with ESP32 and PS
 | 11   | Wheel        | #4-40 nut                                  | 16  | $0.01  | $0.16      | 90480A005                                                                            |
 | 12   | Wheel        | #4-40 lock nut (optional)                  | 16  | $0.03  | $0.48      | 90631A005                                                                            |
 | 13   | On/Off switch | Switch, SPST                              | 1   | $0.71  | $0.71      | [Link](https://www.digikey.com/en/products/detail/e-switch/RA11131121/2720267)       |
-|      |              |                                            |     |        | **$53.74** | Alternate hardware not included in total cost                                        |
+|14    | 3D Print Parts| PLA Filament (or whatever)                | ~650g |$0.02/g | $13      | any                                                                                  | 
+|      |              |                                            |     |        | **$66.74** | Alternate hardware not included in total cost                                        |
 
 
 ### 🪫 Electronics (Control and Drive PCB)
