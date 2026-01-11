@@ -29,39 +29,40 @@ Generic platform for 1:10 scale robot rover (skid steer style) with ESP32 and PS
 
 ### 🪫 Electronics (Control and Drive PCB)
 PS4 Controller (Renewed) https://www.amazon.com/dp/B07QD2HK7B/ref=dp_cr_wdg_tit_rfb
-| Reference | Value | Qty | DigiKey P/N | Adafruit P/N | AliExpress |
-|------------|--------|-----|--------------|---------------|-------------|
-| BZ1 | Buzzer_5V | 1 | 445-2525-1-ND |  |  |
-| C1,C3,C4,C5,C7,C8,C9 | 0.1uF 50V | 7 | 1276-1068-1-ND |  |  |
-| C6,C10,C11 | 0.22uF 50V CER | 3 | 445-2283-1-ND |  |  |
-| C12,C13,C14 | 22uF 50V | 3 | 399-11438-1-ND |  |  |
-| D1,D5,D10,D11 | LED | 4 | 1080-1419-1-ND |  |  |
-| D6,D7,D8,D9 | WS2812B | 4 |  | 3094 |  |
-| D12 | SMF15A | 1 | SMF15A-E3-08CT-ND |  |  |
-| J1 | PINHD_1x2_Male | 1 | S1012EC-40-ND |  |  |
-| J2,J12,J14,J16 | Screw_Terminal_4_P3.50mm | 4 | 732-691243110004-ND |  |  |
-| J3,J15 | ServoPort_04 | 2 | S1012EC-40-ND |  |  |
-| J4,J5,J8,J13 | Screw_Terminal_2_P3.50mm | 4 | 732-2747-ND |  |  |
-| J9 | Barrel_Jack | 1 | EJ508A-ND |  |  |
-| J17 | PINHD_1x3_Male | 1 |  |  |  |
-| Q1 | MOSFET P-CH 30V 25A TO252 | 1 | 785-1106-1-ND |  |  |
-| Q2 | MMBT2222A | 1 | MMBT2222ATPMSCT-ND |  |  |
-| Q3 | AO3400A | 1 | 785-1000-1-ND |  |  |
-| R1,R2,R4,R7,R8,R9,R10,R18,R22,R36,R37,R38 | 10K | 12 | 311-10.0KFRCT-ND |  |  |
-| R3,R6 | 100 | 2 | 311-100FRCT-ND |  |  |
-| R5,R19,R20,R32 | 1K | 4 | 311-1.00KFRCT-ND |  |  |
-| R16 | 220 | 1 | 311-220FRCT-ND |  |  |
-| R17,R21 | 330 | 2 | 311-330FRCT-ND |  |  |
-| R33 | 100k | 1 | 311-100KFRCT-ND |  |  |
-| RN1,RN2,RN3 | 220 array | 3 | CAY16-201J4LFCT-ND |  |  |
-| U1 | INA260 | 1 | 296-47777-1-ND |  |  |
-| U2 | ESP32 | 1 | 1965-ESP32-DEVKITC-32UE-ND |  |  |
-| U3 | PCA9685PW | 1 | 568-11925-1-ND |  |  |
-| U4,U6,U9 | DRV8833 | 3 |  |  | [Link](https://www.aliexpress.us/item/3256806096142480.html) |
-| U5 | UCC27511ADBV | 1 | 296-49474-1-ND |  |  |
-| U7 | L7812 | 1 | 296-44522-1-ND |  |  |
-| U8 | IMU LSM6DS3TR-C | 1 |  | 4503 |  |
-| U14 | MAX40200AUK | 1 | 175-MAX40203AUK+TCT-ND |  |  |
-| U15 | L7805 | 1 | 497-7255-1-ND |  |  |
-| U18,U19 | MP1584 Buck Module | 2 |  |  | [Link](https://www.aliexpress.us/item/3256806890547813.html) |
-*electronics BoM cost = TBD*
+| Reference | Value | Qty | DigiKey P/N | Adafruit P/N | AliExpress | Line total Cost |
+|------------|--------|-----|--------------|---------------|-------------|-----------------|
+| BZ1 | Buzzer_5V | 1 | 445-2525-1-ND |  |  | 0.62 |
+| C1,C3,C4,C5,C7,C8,C9 | 0.1uF 50V | 7 | 1276-1068-1-ND |  |  | 0.91 |
+| C6,C10,C11 | 0.22uF 50V CER | 3 | 445-2283-1-ND |  |  | 0.78 |
+| C12,C13,C14 | 22uF 50V | 3 | 399-11438-1-ND |  |  | 1.05 |
+| D1,D5,D10,D11 | LED | 4 | 1080-1419-1-ND |  |  | 0.84 |
+| D6,D7,D8,D9 | WS2812B | 4 |  | 3094 |  | 0.64 |
+| D12 | SMF15A | 1 | SMF15A-E3-08CT-ND |  |  | 0.13 |
+| J1 | PINHD_1x2_Male | 1 | S1012EC-40-ND |  |  | 0.43 |
+| J2,J12,J14,J16 | Screw_Terminal_4_P3.50mm | 4 | 732-691243110004-ND |  |  | 8.28 |
+| J3,J15 | ServoPort_04 | 2 | S1012EC-40-ND |  |  | 0.86 |
+| J4,J5,J8,J13 | Screw_Terminal_2_P3.50mm | 4 | 732-2747-ND |  |  | 3.16 |
+| J9 | Barrel_Jack | 1 | EJ508A-ND |  |  | 1.22 |
+| J17 | PINHD_1x3_Male | 1 |  |  |  | 0 |
+| Q1 | MOSFET P-CH 30V 25A TO252 | 1 | 785-1106-1-ND |  |  | 1.43 |
+| Q2 | MMBT2222A | 1 | MMBT2222ATPMSCT-ND |  |  | 0.1 |
+| Q3 | AO3400A | 1 | 785-1000-1-ND |  |  | 0.46 |
+| R1,R2,R4,R7,R8,R9,R10,R18,R22,R36,R37,R38 | 10K | 12 | 311-10.0KFRCT-ND |  |  | 0.14 |
+| R3,R6 | 100 | 2 | 311-100FRCT-ND |  |  | 0.2 |
+| R5,R19,R20,R32 | 1K | 4 | 311-1.00KFRCT-ND |  |  | 0.44 |
+| R16 | 220 | 1 | 311-220FRCT-ND |  |  | 0.1 |
+| R17,R21 | 330 | 2 | 311-330FRCT-ND |  |  | 0.22 |
+| R33 | 100k | 1 | 311-100KFRCT-ND |  |  | 0.1 |
+| RN1,RN2,RN3 | 220 array | 3 | CAY16-201J4LFCT-ND |  |  | 0.3 |
+| U1 | INA260 | 1 | 296-47777-1-ND |  |  | 5.52 |
+| U2 | ESP32 | 1 | 1965-ESP32-DEVKITC-32UE-ND |  |  | 10 |
+| U3 | PCA9685PW | 1 | 568-11925-1-ND |  |  | 3.04 |
+| U4,U6,U9 | DRV8833 | 3 |  |  | [Link](https://www.aliexpress.us/item/3256806096142480.html) | 5.23 |
+| U5 | UCC27511ADBV | 1 | 296-49474-1-ND |  |  | 1.13 |
+| U7 | L7812 | 1 | 296-44522-1-ND |  |  | 1.81 |
+| U8 | IMU LSM6DS3TR-C | 1 |  | 4503 |  | 9.95 |
+| U14 | MAX40200AUK | 1 | 175-MAX40203AUK+TCT-ND |  |  | 1.75 |
+| U15 | L7805 | 1 | 497-7255-1-ND |  |  | 0.84 |
+| U18,U19 | MP1584 Buck Module | 2 |  |  | [Link](https://www.aliexpress.us/item/3256806890547813.html) | 1.06 |
+| - | PCB | 1 |  |  |  | 1 |
+|  |  | |  |  | Total | **$68** |
