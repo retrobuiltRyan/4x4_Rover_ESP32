@@ -1,11 +1,14 @@
 # 4x4_Rover_ESP32
-
+Video is a great overview of capabilites and features (watch it).
 *video coming eventually*
 
 Generic platform for 1:10 scale robot rover (skid steer style) with ESP32 and PS4 controller.  Hardware [mostly] from scratch. The 1:10 scale (primarily wheel span and chassis width) mimics some common RC and toy-scale bodies. Makes a uniquie sleeper build that can share a body from off-the-shelf kids toys. 
 ![4x4_skidsteer_rover_real](https://github.com/user-attachments/assets/ce0b91fb-4464-43e5-ac15-fb2367ae0194)
 
 <img width="1233" height="671" alt="barbie_rover_chassis_assy" src="https://github.com/user-attachments/assets/3f10b477-7590-4c3a-a1b9-9fe1fcea4d42" />
+
+PCB can control up to 6 DC motors and 8 Servo Motors. 
+<img width="1711" height="919" alt="PCB render features" src="https://github.com/user-attachments/assets/4531fa4e-34d6-46eb-b0c8-563650fdf296" />
 
 ### 🔩 Mechanical Hardware/Fasteners for Assembly (BoM)
 | Item | Assembly     | Description                                | Qty | Cost   | Line Total | Vendor Link / McMaster Part#         |
@@ -23,12 +26,12 @@ Generic platform for 1:10 scale robot rover (skid steer style) with ESP32 and PS
 | 11   | Wheel        | #4-40 nut                                  | 16  | $0.01  | $0.16      | 90480A005                                                                            |
 | 12   | Wheel        | #4-40 lock nut (optional)                  | 16  | $0.03  | $0.48      | 90631A005                                                                            |
 | 13   | On/Off switch | Switch, SPST                              | 1   | $0.71  | $0.71      | [Link](https://www.digikey.com/en/products/detail/e-switch/RA11131121/2720267)       |
-|14    | 3D Print Parts| PLA Filament (or whatever)                | ~650g |$0.02/g | $13      | any                                                                                  | 
+| 14   | 3D Print Parts| PLA Filament (or whatever)                | ~650g |$0.02/g | $13      | any                                                                                  | 
 |      |              |                                            |     |        | **$66.74** | Alternate hardware not included in total cost                                        |
 
 
 ### 🪫 Electronics (Control and Drive PCB)
-PS4 Controller (Renewed) https://www.amazon.com/dp/B07QD2HK7B/ref=dp_cr_wdg_tit_rfb
+PS4 Controller (Renewed) https://www.amazon.com/dp/B07QD2HK7B/ref=dp_cr_wdg_tit_rfb  (subject to availability most of the time)
 | Reference | Value | Qty | DigiKey P/N | Adafruit P/N | AliExpress | Line total Cost |
 |------------|--------|-----|--------------|---------------|-------------|-----------------|
 | BZ1 | Buzzer_5V | 1 | 445-2525-1-ND |  |  | 0.62 |
@@ -65,4 +68,4 @@ PS4 Controller (Renewed) https://www.amazon.com/dp/B07QD2HK7B/ref=dp_cr_wdg_tit_
 | U15 | L7805 | 1 | 497-7255-1-ND |  |  | 0.84 |
 | U18,U19 | MP1584 Buck Module | 2 |  |  | [Link](https://www.aliexpress.us/item/3256806890547813.html) | 1.06 |
 | - | PCB | 1 |  |  |  | 1 |
-|  |  | |  |  | Total | **$68** |
+|  |  | |  |  | Total | **$63.74** |
