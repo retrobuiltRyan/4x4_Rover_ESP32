@@ -34,6 +34,7 @@ PCB can control up to 6 DC motors and 8 Servo Motors.
 | 14   | 3D Print Parts| PLA Filament (or whatever)                | ~650g |$0.02/g | $13      | any                                                                                  | 
 |      |              |                                            |     |        | **$66.74** | Alternate hardware not included in total cost                                        |
 
+[Linear actuator used in forklift build: 12V 50mm-stroke 15mm/s 64N](https://www.aliexpress.us/item/3256808499012288.html)
 ## 🪫 Electronics (Control and Drive PCB)
 PS4 Controller (Renewed) https://www.amazon.com/dp/B07QD2HK7B/ref=dp_cr_wdg_tit_rfb  (subject to availability most of the time)
 | Reference | Value | Qty | DigiKey P/N | Adafruit P/N | AliExpress | Line total Cost |
