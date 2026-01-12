@@ -13,7 +13,7 @@ PCB can control up to 6 DC motors and 8 Servo Motors.
 <img width="1711" height="919" alt="PCB render features" src="https://github.com/user-attachments/assets/4531fa4e-34d6-46eb-b0c8-563650fdf296" />
 
 ## CAD Project (View only) Feel free to copy and edit!
-[4x4 Rover CAD](https://cad.onshape.com/documents/4f9534eae9bdb33bcf172fe9/w/a4954ea2d6d5d21b33e1d9c4/e/6819e643c891bac21c58d472)
+[4x4 Rover CAD](https://cad.onshape.com/documents/4f9534eae9bdb33bcf172fe9/w/a4954ea2d6d5d21b33e1d9c4/e/6819e643c891bac21c58d472) (Make a free onShape account to export + download)
 
 ## 🔩 Mechanical Hardware/Fasteners for Assembly (BoM)
 | Item | Assembly     | Description                                | Qty | Cost   | Line Total | Vendor Link / McMaster Part#         |
