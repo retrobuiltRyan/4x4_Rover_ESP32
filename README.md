@@ -4,14 +4,18 @@ Video is a great overview of capabilites and features (watch it).
 ![gif](https://github.com/user-attachments/assets/4aedac45-2e85-4259-b073-a9066c83d52b)
 
 Generic platform for 1:10 scale robot rover (skid steer style) with ESP32 and PS4 controller.  Hardware [mostly] from scratch. The 1:10 scale (primarily wheel span and chassis width) mimics some common RC and toy-scale bodies. Makes a uniquie sleeper build that can share a body from off-the-shelf kids toys. PCB has enough functionality to expand into complex robots.
-![4x4_skidsteer_rover_real](https://github.com/user-attachments/assets/ce0b91fb-4464-43e5-ac15-fb2367ae0194)
+<img width="2368" height="661" alt="render and real side by side" src="https://github.com/user-attachments/assets/c16490c3-a76f-4242-8b09-750eead0172e" />
 
-<img width="1233" height="671" alt="barbie_rover_chassis_assy" src="https://github.com/user-attachments/assets/3f10b477-7590-4c3a-a1b9-9fe1fcea4d42" />
+![paa1gcam](https://github.com/user-attachments/assets/849f1936-dda5-45ad-97fa-25db11e1fccf)
+
 
 PCB can control up to 6 DC motors and 8 Servo Motors. 
 <img width="1711" height="919" alt="PCB render features" src="https://github.com/user-attachments/assets/4531fa4e-34d6-46eb-b0c8-563650fdf296" />
 
-### 🔩 Mechanical Hardware/Fasteners for Assembly (BoM)
+## CAD Project (View only) Feel free to copy and edit!
+[4x4 Rover CAD](https://cad.onshape.com/documents/4f9534eae9bdb33bcf172fe9/w/a4954ea2d6d5d21b33e1d9c4/e/6819e643c891bac21c58d472)
+
+## 🔩 Mechanical Hardware/Fasteners for Assembly (BoM)
 | Item | Assembly     | Description                                | Qty | Cost   | Line Total | Vendor Link / McMaster Part#         |
 |------|--------------|--------------------------------------------|-----|--------|------------|--------------------------------------------------------------------------------------|
 | 1    | Wheel        | Lego "Compatible" Tire 94x38 (or similar)  | 1   | $17.65 | $17.65     | [Link](https://www.aliexpress.us/item/3256808684598937.html)                         |
@@ -30,8 +34,7 @@ PCB can control up to 6 DC motors and 8 Servo Motors.
 | 14   | 3D Print Parts| PLA Filament (or whatever)                | ~650g |$0.02/g | $13      | any                                                                                  | 
 |      |              |                                            |     |        | **$66.74** | Alternate hardware not included in total cost                                        |
 
-
-### 🪫 Electronics (Control and Drive PCB)
+## 🪫 Electronics (Control and Drive PCB)
 PS4 Controller (Renewed) https://www.amazon.com/dp/B07QD2HK7B/ref=dp_cr_wdg_tit_rfb  (subject to availability most of the time)
 | Reference | Value | Qty | DigiKey P/N | Adafruit P/N | AliExpress | Line total Cost |
 |------------|--------|-----|--------------|---------------|-------------|-----------------|
