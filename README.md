@@ -34,7 +34,15 @@ PCB can control up to 6 DC motors and 8 Servo Motors.
 | 14   | 3D Print Parts| PLA Filament (or whatever)                | ~650g |$0.02/g | $13      | any                                                                                  | 
 |      |              |                                            |     |        | **$66.74** | Alternate hardware not included in total cost                                        |
 
-[Linear actuator used in forklift build: 12V 50mm-stroke 15mm/s 64N](https://www.aliexpress.us/item/3256808499012288.html)
+### Optional Forklift Assembly Motors + Parts. *Not a comprehensive list- just the essentials*
+| Item | Assembly     | Description                                | Qty | Cost   | Line Total | Vendor Link / McMaster Part#         |
+|------|--------------|--------------------------------------------|-----|--------|------------|--------------------------------------------------------------------------------------|
+| 15   |Forklift      |Motor High Torque 12V, 50RPM, (37mm dia)    |  1  | $14    | $14        |   [Amazon](https://www.amazon.com/dp/B07K9KPDNV) or [AliExpress](https://www.aliexpress.us/item/2251832401105488.html)     |
+| 16   |Forklift      |Motor (Linear Actuator ) 12V 50mm-stroke 15mm/s 64N        | 2   | $22    | $44        |    [AliExpress](https://www.aliexpress.us/item/3256808499012288.html)                           |
+| 17   |Forklift      |Bearing 625ZZ , 16mm OD dia, (5x16x5mm)                    | 8   |$0.55   |$4.40       |[AliExpress](https://www.aliexpress.us/item/3256809469842556.html)                    |
+| 18   |Forklift      |Bearing, 11mm OD dia, (5x11x5mm)                           | 10  | $0.25  | $2.50      | [AliExpress](https://www.aliexpress.us/item/3256807482131308.html)                   |                           
+
+
 ## 🪫 Electronics (Control and Drive PCB)
 PS4 Controller (Renewed) https://www.amazon.com/dp/B07QD2HK7B/ref=dp_cr_wdg_tit_rfb  (subject to availability most of the time)
 | Reference | Value | Qty | DigiKey P/N | Adafruit P/N | AliExpress | Line total Cost |
