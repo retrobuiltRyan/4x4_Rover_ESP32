@@ -63,7 +63,7 @@ PS4 Controller (Renewed) https://www.amazon.com/dp/B07QD2HK7B/ref=dp_cr_wdg_tit_
 | Q1 | MOSFET P-CH 30V 25A TO252 | 1 | 785-1106-1-ND |  |  | 1.43 |
 | Q2 | MMBT2222A | 1 | MMBT2222ATPMSCT-ND |  |  | 0.1 |
 | Q3 | AO3400A | 1 | 785-1000-1-ND |  |  | 0.46 |
-| R1,R2,R4,R7,R8,R9,R10,R18,R22,R36,R37,R38 | 10K | 12 | 311-10.0KFRCT-ND |  |  | 0.14 |
+| R1,R2,R4,R7,R8,R9, R10,R18,R22,R36,R37,R38 | 10K | 12 | 311-10.0KFRCT-ND |  |  | 0.14 |
 | R3,R6 | 100 | 2 | 311-100FRCT-ND |  |  | 0.2 |
 | R5,R19,R20,R32 | 1K | 4 | 311-1.00KFRCT-ND |  |  | 0.44 |
 | R16 | 220 | 1 | 311-220FRCT-ND |  |  | 0.1 |
