@@ -1,0 +1,137 @@
+#include <Wire.h>
+#include <Adafruit_PWMServoDriver.h>
+
+// Create PCA9685 object
+Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver();
+
+// Servo config for SG90
+#define SERVO_CHANNEL 0   // Channel 0 on PCA9685
+#define SERVO_MIN 160     // ~500 µs pulse for 0° 150-600 is 0 - 180 range. Shorten if servo 
+#define SERVO_MAX 590     // ~2400 µs pulse for 180°
+
+// DRV8833 motor control pins on PCA9685
+#define MOTOR_IN1_CHANNEL 8
+#define MOTOR_IN2_CHANNEL 9
+
+
+#define SLEEP_PIN 33
+
+void setup() {
+  Serial.begin(115200);
+  Serial.println("PCA9685 SG90 Servo Test");
+
+  pinMode(SLEEP_PIN, OUTPUT);
+  digitalWrite(SLEEP_PIN, LOW); // disable the DRV8833 drivers for this demo
+
+  pwm.begin();
+  pwm.setPWMFreq(50);  // SG90 expects ~50 Hz
+
+  delay(20);
+}
+
+// Convert angle (0-180) to pulse length
+uint16_t angleToPulse(int angle) {
+  return map(angle, 0, 180, SERVO_MIN, SERVO_MAX);
+}
+
+void loop() {
+
+// setPWM(channel, onStep, offStep):
+//   channel  -> which PCA9685 output (0–15)
+//   onStep   -> 0–4095 tick count when signal goes HIGH
+//   offStep  -> 0–4095 tick count when signal goes LOW
+// Example: setPWM(0, 0, 300) → on channel 0, pulse starts at step 0 and ends at step 300
+
+
+
+//Go to Angle Commands and rest
+pwm.setPWM(SERVO_CHANNEL, 0, angleToPulse(10)); //mechanical limit is around 0
+delay(1500);
+
+pwm.setPWM(SERVO_CHANNEL, 0, angleToPulse(45));
+delay(1500);
+
+pwm.setPWM(SERVO_CHANNEL, 0, angleToPulse(90)); //Using a SG90, range beyond 90deg will break something
+delay(1500);
+
+//pwm.setPWM(SERVO_CHANNEL, 0, angleToPulse(135));
+delay(1500);
+
+//pwm.setPWM(SERVO_CHANNEL, 0, angleToPulse(170)); //mechanical limit is around 180
+delay(1500);
+
+
+ // Sweep duty cycle UP// LEDs will flicker is the PWM Freq is low (50Hz is used in this example)
+  for (int duty = 0; duty <= 4095; duty += 25) {
+    pwm.setPWM(12, 0, duty);  // duty ranges 0..4095 (~0..100%)
+    delay(10);
+  }
+
+  delay(500);
+
+  // Sweep duty cycle DOWN
+  for (int duty = 4095; duty >= 0; duty -= 25) {
+    pwm.setPWM(12, 0, duty);
+    delay(10);
+  }
+
+  delay(500);
+
+
+
+// Turn channel 12 fully ON
+pwm.setPWM(12, 4096, 0);
+Serial.println("Ch12 ON");
+delay(1000);
+// Turn channel 12 fully OFF
+pwm.setPWM(12, 0, 0);
+Serial.println("Ch12 OFF");
+delay(1000);
+
+  // Sweep with angle commands
+  for (int angle = 0; angle <= 90; angle += 5) {
+    pwm.setPWM(SERVO_CHANNEL, 0, angleToPulse(angle));
+    delay(50);
+  }
+
+  delay(500);
+
+  for (int angle = 90; angle >= 0; angle -= 5) {
+    pwm.setPWM(SERVO_CHANNEL, 0, angleToPulse(angle));
+    delay(50);
+  }
+
+  delay(500);
+
+  // Test motor forward/reverse :Drive the DRV8833 with the PCA9865 CH8 and CH9
+  testMotor();
+}
+//=====================subroutines==================================================
+// 🔁 Function to test DC motor forward and reverse
+void testMotor() {
+  digitalWrite(SLEEP_PIN, HIGH); //enable the DRV8833 driver
+  Serial.println("Motor Forward");
+  // IN1 = HIGH, IN2 = LOW → Forward
+  pwm.setPWM(MOTOR_IN1_CHANNEL, 4096, 0); // Fully ON
+  pwm.setPWM(MOTOR_IN2_CHANNEL, 0, 0);    // Fully OFF
+  delay(1000);
+
+  Serial.println("Motor Stop");
+  // Brake/stop: both LOW (or both HIGH)
+  pwm.setPWM(MOTOR_IN1_CHANNEL, 0, 0);
+  pwm.setPWM(MOTOR_IN2_CHANNEL, 0, 0);
+  delay(500);
+
+  Serial.println("Motor Reverse");
+  // IN1 = LOW, IN2 = HIGH → Reverse
+  pwm.setPWM(MOTOR_IN1_CHANNEL, 0, 0);
+  pwm.setPWM(MOTOR_IN2_CHANNEL, 4096, 0);
+  delay(1000);
+
+  Serial.println("Motor Stop");
+  pwm.setPWM(MOTOR_IN1_CHANNEL, 0, 0);
+  pwm.setPWM(MOTOR_IN2_CHANNEL, 0, 0);
+  delay(1000);
+
+   digitalWrite(SLEEP_PIN, LOW); //disable the DRV8833 driver
+}

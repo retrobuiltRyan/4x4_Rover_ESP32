@@ -1,0 +1,40 @@
+#define BUZZER_PIN 23
+
+
+// Frequencies for the notes (in Hz)
+#define NOTE_E5 659
+#define NOTE_C5 523
+#define NOTE_G5 784
+#define REST    0
+
+const int melody[] = {
+  NOTE_E5, NOTE_E5, REST, NOTE_E5, REST, NOTE_C5, NOTE_E5, NOTE_G5
+};
+
+const int noteDurations[] = {
+  150, 150, 150, 150, 150, 150, 150, 300  // Durations in ms
+};
+
+const int numNotes = sizeof(melody) / sizeof(melody[0]);
+
+void setup() {
+  // Nothing needed here
+}
+
+void loop() {
+  for (int i = 0; i < numNotes; i++) {
+    int note = melody[i];
+    int duration = noteDurations[i];
+
+    if (note != REST) {
+      tone(BUZZER_PIN, note, duration);
+    } else {
+      noTone(BUZZER_PIN);
+    }
+
+    delay(duration + 50);  // Wait for the note to finish (+ short gap)
+  }
+
+  noTone(BUZZER_PIN);
+  delay(1000);  // Pause before repeating
+}

@@ -1,0 +1,37 @@
+//this is cool but doesn't seem worth making the main code sloppy read for a GRX
+
+#include <GyverOLED.h>
+//GyverOLED<SSD1306_128x32, OLED_BUFFER> oled;
+GyverOLED<SSD1306_128x32, OLED_NO_BUFFER> oled;
+
+
+// ===== CONFIG =====
+const byte BATTERY_PERCENT = 75; // Set battery level here (0–100)
+
+void setup() {
+  oled.init();
+  oled.clear();
+
+  oled.setCursorXY(0, 0); // Top-left corner
+  drawBattery(BATTERY_PERCENT);
+
+  oled.update(); // Show the battery
+}
+
+void loop() {
+  // Nothing here — icon stays on screen
+}
+
+void drawBattery(byte percent) {
+  oled.drawByte(0b00111100); // Tip
+  oled.drawByte(0b00111100);
+  oled.drawByte(0b11111111); // Left wall
+
+  // Fill interior: empty or full
+  for (byte i = 0; i < 100 / 8; i++) {
+    if (i < (100 - percent) / 8) oled.drawByte(0b10000001); // Empty segment
+    else oled.drawByte(0b11111111);                         // Filled segment
+  }
+
+  oled.drawByte(0b11111111); // End cap
+}
