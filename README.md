@@ -1,6 +1,7 @@
 # 4x4_Rover_ESP32
-Video is a great overview of capabilites and features (watch it).
-*video coming eventually*
+Video is a great overview of capabilites and features.<br>
+[![Watch the video](https://img.youtube.com/vi/ucYs9Jp9uSM/0.jpg)](https://youtu.be/ucYs9Jp9uSM)
+
 ![gif](https://github.com/user-attachments/assets/4aedac45-2e85-4259-b073-a9066c83d52b)
 
 Generic platform for 1:10 scale robot rover (skid steer style) with ESP32 and PS4 controller.  Hardware [mostly] from scratch. The 1:10 scale (primarily wheel span and chassis width) mimics some common RC and toy-scale bodies. Makes a uniquie sleeper build that can share a body from off-the-shelf kids toys. PCB has enough functionality to expand into complex robots.
